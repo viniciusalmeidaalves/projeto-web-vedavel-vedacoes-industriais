@@ -9,7 +9,8 @@ Tecnologias HTML, CSS e JS
 ![image](https://github.com/user-attachments/assets/e97d44cb-7e13-41ca-9d71-89d2745a5959)
 *Página inicial do projeto Vedavel
 #
-![image](https://github.com/user-attachments/assets/ca1e894c-bdb1-44dc-a4d1-06b0536fe9ed)
+![image](https://github.com/user-attachments/assets/74221473-76f2-4575-b46d-886f00ff7b88)
+![image](https://github.com/user-attachments/assets/b4d47e31-63c8-41b6-88fc-16725d921b24)
 *Página produtos
 #
 ![image](https://github.com/user-attachments/assets/f44ee351-6295-4535-83b6-bf049d2a4ef2)
