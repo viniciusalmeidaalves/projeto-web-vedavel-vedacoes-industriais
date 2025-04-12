@@ -1,0 +1,1372 @@
+/**
+ * styles.css
+ * 
+ * Este arquivo contém os estilos CSS para o site.
+ * 
+ * @author Vinicius Almeida Alve - Vtechnologie.
+ * @version 1.0
+ **/
+
+/*cores e fontes*/
+ :root {
+  --cor-primaria: #0118D8; /* Define a cor primária da paleta */
+  --cor-secundaria: #1B56FD; /* Define a cor secundária da paleta */
+  --cor-texto: #333; /* Define a cor padrão do texto */
+  --fonte-principal: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Define a fonte principal a ser utilizada */
+}
+
+/* Soft reset do css */
+* {
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+  box-sizing: border-box; /* Faz com que a largura e a altura incluam o padding e a borda */
+}
+
+
+/* Inicio - menu global, todas as páginas */
+.menu-topo {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 15px 20px; 
+  background-color: #f8f8f8; 
+  border-bottom: 1px solid #eee; 
+}
+
+.logo {
+  font-size: 1.5em; 
+  font-weight: bold; 
+  color: var(--cor-primaria); 
+}
+
+.logo img {
+  display: block; 
+  height: auto; 
+  /* Defina uma altura máxima ou largura máxima conforme necessário */
+  /* max-height: 50px; */
+  /* max-width: 150px; */
+}
+
+.menu-principal ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+ font-family: var(--fonte-principal);}
+
+.menu-principal li {
+  margin-left: 20px; 
+ font-family: var(--fonte-principal);}
+
+.menu-principal li:first-child {
+  margin-left: 0; 
+}
+
+.menu-principal a {
+  text-decoration: none; 
+  color: #333; 
+  font-weight: bold; 
+  font-size: 0.9em; 
+  padding-bottom: 5px; 
+ font-family: var(--fonte-principal);}
+
+.menu-principal a:hover {
+  color: var(--cor-secundaria); 
+}
+
+.menu-principal li:first-child a {
+  color: #000; 
+  border-bottom: 2px solid #000; 
+ font-family: var(--fonte-principal);}
+
+/* Estilos responsivos (opcional) */
+@media (max-width: 600px) {
+  .menu-topo {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .menu-principal ul {
+    margin-top: 10px; 
+    flex-direction: column; 
+    align-items: flex-start; 
+   font-family: var(--fonte-principal);}
+
+  .menu-principal li {
+    margin: 10px 0; 
+   font-family: var(--fonte-principal);}
+
+  .menu-principal li:first-child {
+    margin-top: 0; 
+  }
+}
+
+/* Página vedavel - Primeira seção "Vedavel fabri... */
+.vedavel-section {
+  position: relative; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 80px; 
+  background-color: rgba(27, 86, 253, 0.0); 
+  /*background-color: #f0f8ff;*/ /* Cor de fundo alternativa (atualmente comentada) */
+  font-family: var(--fonte-principal); 
+  color: #ffffff; 
+  overflow: hidden; 
+}
+
+.vedavel-video-bg {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+.vedavel-content {
+  flex: 1; 
+  max-width: 50%; 
+}
+
+.vedavel-content h1 {
+  font-size: 2.8rem; 
+  margin-bottom: 20px; 
+  line-height: 1.2; 
+}
+
+.vedavel-content p {
+  font-size: 1.1rem; 
+  line-height: 1.6; 
+  margin-bottom: 30px; 
+}
+
+.vedavel-buttons {
+  display: flex; 
+}
+
+.button {
+  display: inline-block; 
+  padding: 15px 30px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 1rem; 
+  margin-right: 20px; 
+  transition: background-color 0.3s ease; 
+}
+
+.produtos {
+  background-color: var(--cor-secundaria); 
+  color: #fff; 
+}
+
+.orcamento {
+  background-color: var(--cor-secundaria); 
+  color: #fff; 
+}
+
+.button:hover {
+  background-color: var(--cor-primaria); 
+}
+
+.vedavel-image {
+  flex: 1; /* Permite que este elemento cresça para ocupar o espaço disponível no flex container */
+  max-width: 45%; /* Define uma largura máxima para a imagem de 45% do container pai */
+  text-align: center; /* Centraliza o conteúdo (a imagem) dentro desta div */
+}
+
+.vedavel-image img {
+  max-width: 100%; /* Define a largura máxima da imagem para 100% do seu container pai */
+  height: auto; /* Mantém a proporção da altura da imagem */
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); /* Define um formato de recorte poligonal para a imagem */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à imagem */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .vedavel-section {
+    flex-direction: column; /* Altera a direção do flexbox para coluna em telas menores */
+    text-align: center; /* Centraliza o texto em telas menores */
+    padding: 40px; /* Reduz o preenchimento em telas menores */
+  }
+
+  .vedavel-content {
+    max-width: 100%; /* O conteúdo ocupa toda a largura em telas menores */
+    margin-bottom: 30px; /* Adiciona uma margem inferior de 30px para separar do próximo elemento */
+  }
+
+  .vedavel-content h1 {
+    font-size: 2.2rem; /* Reduz o tamanho da fonte do título em telas menores */
+  }
+
+  .vedavel-buttons {
+    flex-direction: column; /* Altera a direção do flexbox para coluna em telas menores */
+    align-items: center; /* Centraliza os botões em telas menores */
+  }
+
+  .button {
+    margin: 10px 0; /* Adiciona margem superior e inferior e remove a margem lateral em telas menores */
+    width: 80%; /* Define a largura dos botões para 80% da largura do container em telas menores */
+  }
+
+  .vedavel-image {
+    max-width: 80%; /* Define a largura máxima da imagem para 80% da largura do container em telas menores */
+  }
+}
+/* Fim section 1 */
+
+/* Inicio section 2 */
+.catalogo-section {
+  background-color: var(--cor-secundaria); /* Define a cor de fundo usando a variável CSS --cor-secundaria (Cor de fundo clara, similar à imagem) */
+  padding: 80px 20px; /* Define um preenchimento superior e inferior de 80px e um preenchimento esquerdo e direito de 20px */
+  text-align: center; /* Centraliza o texto dentro da seção */
+  font-family: var(--fonte-principal); /* Define a fonte para sans-serif */
+}
+
+.catalogo-content {
+  max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.catalogo-content h2 {
+  font-size: 2.5rem; /* Define o tamanho da fonte do título como 2.5rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  margin-bottom: 60px; /* Adiciona uma margem inferior de 60px */
+  color: #ffffff; /* Define a cor do texto como branco */
+}
+
+.catalogo-stats {
+  display: flex; /* Usa o modelo de layout flexbox para organizar os itens de estatística */
+  justify-content: space-around; /* Distribui o espaço entre os itens de estatística */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+}
+
+.stat {
+  flex: 1; /* Permite que este elemento cresça para ocupar o espaço disponível */
+  min-width: 250px; /* Define uma largura mínima de 250px para cada item de estatística */
+  margin: 20px; /* Adiciona uma margem de 20px em todos os lados */
+}
+
+.stat-number {
+  font-size: 3rem; /* Define o tamanho da fonte do número da estatística como 3rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #ffffff; /* Define a cor do texto como branco (Cor roxa, similar à imagem) */
+  display: block; /* Faz com que o número se comporte como um elemento de bloco */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+}
+
+.stat-label {
+  font-size: 1.2rem; /* Define o tamanho da fonte do rótulo da estatística como 1.2rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #ffffff; /* Define a cor do texto como branco */
+  display: block; /* Faz com que o rótulo se comporte como um elemento de bloco */
+  margin-bottom: 15px; /* Adiciona uma margem inferior de 15px */
+}
+
+.stat p {
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo como 1rem */
+  color: #ffffff; /* Define a cor do texto como branco */
+  line-height: 1.6; /* Define a altura da linha como 1.6 vezes o tamanho da fonte */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .catalogo-content h2 {
+    font-size: 2rem; /* Reduz o tamanho da fonte do título em telas menores */
+    margin-bottom: 40px; /* Reduz a margem inferior do título em telas menores */
+  }
+
+  .stat {
+    min-width: 100%; /* Os itens de estatística ocupam toda a largura em telas menores */
+    margin: 30px 0; /* Adiciona margem superior e inferior aos itens de estatística em telas menores */
+  }
+
+  .stat-number {
+    font-size: 2.5rem; /* Reduz o tamanho da fonte do número da estatística em telas menores */
+  }
+}
+/* Fim section 2 */
+
+/* Inicio section 3 */
+.objetivos-section {
+  background-color: #f8f8f8; /* Define a cor de fundo como #f8f8f8 */
+  padding: 80px 20px; /* Define um preenchimento superior e inferior de 80px e um preenchimento esquerdo e direito de 20px */
+  text-align: center; /* Centraliza o texto dentro da seção */
+  font-family: var(--fonte-principal); /* Define a fonte para sans-serif usando a variável CSS */
+}
+
+.objetivos-content {
+  max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.objetivos-content h2 {
+  font-size: 2.5rem; /* Define o tamanho da fonte do título como 2.5rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  margin-bottom: 60px; /* Adiciona uma margem inferior de 60px */
+  color: #333; /* Define a cor do texto como #333 */
+}
+
+.objetivos-piramide {
+  display: flex; /* Usa o modelo de layout flexbox para organizar os elementos filhos */
+  flex-direction: column; /* Alinha os elementos filhos em uma coluna */
+  align-items: center; /* Alinha os elementos filhos horizontalmente ao centro */
+}
+
+.nivel {
+  background-color: #e8f5ff; /* Define a cor de fundo como #e8f5ff */
+  padding: 40px; /* Define um preenchimento de 40px em todos os lados */
+  margin: 10px 0; /* Adiciona uma margem superior e inferior de 10px */
+  width: 80%; /* Define a largura como 80% do container pai */
+  border-radius: 10px; /* Adiciona bordas arredondadas com um raio de 10px */
+  position: relative; /* Define a posição como relativa para posicionar elementos filhos absolutamente dentro */
+}
+
+.nivel:nth-child(1) {
+  width: 50%; /* Define a largura do primeiro elemento 'nivel' como 50% do container pai */
+}
+
+.nivel:nth-child(2) {
+  width: 65%; /* Define a largura do segundo elemento 'nivel' como 65% do container pai */
+}
+
+.icone {
+  width: 30px; /* Define a largura do ícone como 30px */
+  height: auto; /* Mantém a proporção da altura do ícone */
+  position: absolute; /* Posiciona o ícone absolutamente dentro do seu container pai ('nivel') */
+  left: 20px; /* Alinha a esquerda do ícone a 20px da esquerda do container pai */
+  top: 50%; /* Alinha o topo do ícone ao centro vertical do container pai */
+  transform: translateY(-50%); /* Ajusta a posição vertical do ícone para centralizá-lo */
+  /* Adicionando transição para uma animação suave */
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave de 0.3 segundos para a propriedade 'transform' */
+}
+
+.icone i {
+  color: #333; /* Define a cor do ícone como #333 */
+  font-size: 1.5em; /* Define o tamanho da fonte do ícone como 1.5 vezes o tamanho da fonte do elemento pai */
+}
+
+/* Animação de rotação ao passar o mouse */
+.icone:hover {
+  transform: translateY(-50%) rotate(360deg); /* Rotaciona o ícone em 360 graus ao passar o mouse */
+}
+
+.nivel h3 {
+  font-size: 1.8rem; /* Define o tamanho da fonte do título do nível como 1.8rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #333; /* Define a cor do texto como #333 */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+  margin-left: 60px; /* Adiciona uma margem esquerda de 60px para dar espaço ao ícone */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.nivel p {
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo do nível como 1rem */
+  color: #777; /* Define a cor do texto como #777 */
+  line-height: 1.6; /* Define a altura da linha como 1.6 vezes o tamanho da fonte */
+  margin-left: 60px; /* Adiciona uma margem esquerda de 60px para dar espaço ao ícone */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+@media (max-width: 768px) {
+  .objetivos-content h2 {
+    font-size: 2rem; /* Reduz o tamanho da fonte do título para 2rem em telas menores */
+    margin-bottom: 40px; /* Reduz a margem inferior do título para 40px em telas menores */
+  }
+
+  .nivel {
+    width: 90%; /* Define a largura dos elementos 'nivel' como 90% do container pai em telas menores */
+    padding: 30px; /* Reduz o preenchimento dos elementos 'nivel' para 30px em telas menores */
+  }
+
+  .nivel:nth-child(1),
+  .nivel:nth-child(2) {
+    width: 90%; /* Garante que o primeiro e segundo elementos 'nivel' tenham largura de 90% em telas menores */
+  }
+
+  .icone {
+    width: 25px; /* Reduz a largura dos ícones para 25px em telas menores */
+  }
+
+  .icone i {
+    font-size: 1.2em; /* Reduz o tamanho da fonte dos ícones para 1.2em em telas menores */
+  }
+
+  .nivel h3 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título do nível para 1.5rem em telas menores */
+  }
+}
+/* Fim section 3 */
+
+/* Inicio section 4 */
+.setores-section {
+  background-image:
+    linear-gradient(rgba(27, 86, 253, 0.7), rgba(27, 86, 253, 0.3)),
+    url('../images/banners/industria-de-cima.png'); /* Define uma imagem de fundo com um gradiente sobreposto */
+  background-color: #ffffff; /* Define uma cor de fundo fallback caso a imagem não carregue */
+  background-size: cover; /* Garante que a imagem de fundo cubra toda a área do elemento */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+  padding: 80px 20px; /* Define um preenchimento superior e inferior de 80px e um preenchimento esquerdo e direito de 20px */
+  text-align: center; /* Centraliza o texto dentro da seção */
+  font-family: var(--fonte-principal); /* Define a fonte para sans-serif usando a variável CSS */
+}
+
+.setores-content {
+  max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.setores-content h2 {
+  font-size: 2.5rem; /* Define o tamanho da fonte do título como 2.5rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  margin-bottom: 60px; /* Adiciona uma margem inferior de 60px */
+  color: #ffffff; /* Define a cor do texto como branco */
+}
+
+.setores-circulo {
+  display: flex; /* Usa o modelo de layout flexbox para organizar os elementos filhos */
+  justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+  align-items: center; /* Centraliza os elementos filhos verticalmente */
+  position: relative; /* Define a posição como relativa para posicionar elementos filhos absolutamente dentro */
+  width: 600px; /* Define a largura do círculo como 600px */
+  height: 600px; /* Define a altura do círculo como 600px */
+  margin: 0 auto; /* Centraliza o círculo horizontalmente */
+  /* border: 2px solid #ffffff; /* Remova esta linha após o teste */
+  border-radius: 50%; /* Adicionado para visualizar o círculo (remova depois se não desejar) */
+}
+
+.setor {
+  position: absolute; /* Posiciona o elemento absolutamente dentro do seu container pai (setores-circulo) */
+  width: 200px; /* Define a largura de cada setor como 200px */
+  text-align: center; /* Centraliza o texto dentro de cada setor */
+}
+
+/* Posicionamento dos setores no círculo - Corrigido */
+.setor:nth-child(1) { /* Indústria Pesada - Topo */
+  top: 0; /* Alinha o topo do setor com o topo do círculo */
+  left: 50%; /* Alinha a esquerda do setor ao centro horizontal do círculo */
+  transform: translateX(-50%); /* Move o setor 50% da sua própria largura para a esquerda para centralizá-lo */
+}
+
+.setor:nth-child(2) { /* Petroquímica - Bottom */
+  bottom: 0; /* Alinha a parte inferior do setor com a parte inferior do círculo */
+  left: 50%; /* Alinha a esquerda do setor ao centro horizontal do círculo */
+  transform: translateX(-50%); /* Move o setor 50% da sua própria largura para a esquerda para centralizá-lo */
+}
+
+.setor:nth-child(3) { /* Maquinário - Direita */
+  right: 0; /* Alinha a direita do setor com a direita do círculo */
+  top: 50%; /* Alinha o topo do setor ao centro vertical do círculo */
+  transform: translateY(-50%); /* Move o setor 50% da sua própria altura para cima para centralizá-lo */
+}
+
+.setor:nth-child(4) { /* Saneamento - Esquerda */
+  left: 0; /* Alinha a esquerda do setor com a esquerda do círculo */
+  top: 50%; /* Alinha o topo do setor ao centro vertical do círculo */
+  transform: translateY(-50%); /* Move o setor 50% da sua própria altura para cima para centralizá-lo */
+}
+
+.setor-icone {
+  display: block; /* Faz com que o ícone ocupe toda a largura disponível e empurre outros elementos para novas linhas */
+  margin-bottom: 15px; /* Adiciona uma margem inferior de 15px */
+  font-size: 2.5rem; /* Define o tamanho da fonte do ícone como 2.5rem */
+  color: #ffffff; /* Cor inicial dos ícones */
+  transition: transform 0.3s ease-in-out; /* Transição suave de 0.3 segundos para a propriedade 'transform' */
+  transform-origin: center center; /* Define o centro da transformação (rotação) para o centro do elemento */
+}
+
+.setor-icone:hover {
+  transform: rotate(360deg); /* Rotaciona o ícone em 360 graus ao passar o mouse */
+}
+
+.setor h3 {
+  font-size: 1.5rem; /* Define o tamanho da fonte do título do setor como 1.5rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #ffffff; /* Define a cor do texto como branco */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+}
+
+.setor p {
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo do setor como 1rem */
+  color: #ffffff; /* Define a cor do texto como branco */
+  line-height: 1.6; /* Define a altura da linha como 1.6 vezes o tamanho da fonte */
+}
+
+/* Círculo central (opcional) */
+.setores-circulo::before {
+  content: ''; /* Conteúdo vazio necessário para pseudo-elementos */
+  position: absolute; /* Posiciona o pseudo-elemento absolutamente dentro do seu container pai (setores-circulo) */
+  width: 150px; /* Define a largura do círculo central como 150px */
+  height: 150px; /* Define a altura do círculo central como 150px */
+  border: 2px solid #ffffff; /* Adiciona uma borda branca de 2px */
+  border-radius: 50%; /* Cria um círculo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .setores-circulo {
+    width: 300px; /* Reduz a largura do círculo para 300px em telas menores */
+    height: 300px; /* Reduz a altura do círculo para 300px em telas menores */
+  }
+
+  .setor {
+    width: 150px; /* Reduz a largura de cada setor para 150px em telas menores */
+    position: relative; /* Altera a posição para relative para que os setores se organizem em coluna */
+    margin: 20px 0; /* Adiciona margem superior e inferior e remove a margem lateral em telas menores */
+  }
+
+  .setor:nth-child(1),
+  .setor:nth-child(2),
+  .setor:nth-child(3),
+  .setor:nth-child(4) {
+    top: auto; /* Reseta a propriedade 'top' */
+    bottom: auto; /* Reseta a propriedade 'bottom' */
+    left: auto; /* Reseta a propriedade 'left' */
+    right: auto; /* Reseta a propriedade 'right' */
+    transform: none; /* Remove a transformação de translação */
+  }
+
+  .setor-icone {
+    display: block; /* Garante que o ícone ocupe a largura total */
+    margin-bottom: 10px; /* Reduz a margem inferior do ícone em telas menores */
+    font-size: 2rem; /* Reduz o tamanho da fonte do ícone para 2rem em telas menores */
+    color: #ffffff; /* Cor inicial dos ícones */
+    transition: transform 0.3s ease-in-out; /* Transição suave para a rotação */
+    transform-origin: center center; /* Define o centro da rotação */
+  }
+
+  .setor-icone:hover {
+    transform: rotate(360deg); /* Rotaciona o ícone em 360 graus ao passar o mouse */
+  }
+
+  .setor h3 {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte do título do setor para 1.2rem em telas menores */
+  }
+
+  .setores-circulo::before {
+    width: 250px; /* Reduz a largura do círculo central para 250px em telas menores */
+    height: 250px; /* Reduz a altura do círculo central para 250px em telas menores */
+  }
+
+  .setores-circulo {
+    flex-direction: column; /* Organiza os setores em coluna em telas menores */
+    width: auto; /* Permite que a largura se ajuste ao conteúdo */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+  }
+
+  .setores-circulo::before {
+    display: none; /* Oculta o círculo central em telas menores */
+  }
+}
+/* Fim section 4 */
+
+/* Inicio section 5 */
+.compromisso-section {
+  background-color: #f8f8f8; /* Define a cor de fundo como #f8f8f8 (Cor de fundo clara, similar à imagem) */
+  padding: 80px 20px; /* Define um preenchimento superior e inferior de 80px e um preenchimento esquerdo e direito de 20px */
+  text-align: center; /* Centraliza o texto dentro da seção */
+  font-family: var(--fonte-principal); /* Define a fonte para sans-serif */
+}
+
+.compromisso-content {
+  max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.compromisso-content h2 {
+  font-size: 2.5rem; /* Define o tamanho da fonte do título como 2.5rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  margin-bottom: 60px; /* Adiciona uma margem inferior de 60px */
+  color: #333; /* Define a cor do texto como #333 */
+}
+
+.compromisso-item {
+  display: inline-block; /* Permite que os itens fiquem na mesma linha, mas com propriedades de bloco */
+  width: 30%; /* Define a largura de cada item como 30% */
+  margin: 20px; /* Adiciona uma margem de 20px em todos os lados */
+  text-align: left; /* Alinha o texto à esquerda dentro do item */
+}
+
+.compromisso-item h3 {
+  font-size: 1.8rem; /* Define o tamanho da fonte do título como 1.8rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #333; /* Define a cor do texto como #333 */
+  margin-bottom: 15px; /* Adiciona uma margem inferior de 15px */
+}
+
+.compromisso-item p {
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo como 1rem */
+  color: #777; /* Define a cor do texto como #777 */
+  line-height: 1.6; /* Define a altura da linha como 1.6 vezes o tamanho da fonte */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .compromisso-item {
+    width: 90%; /* Aumenta a largura dos itens para 90% em telas menores */
+    margin: 30px 0; /* Adiciona margem superior e inferior e remove a margem lateral em telas menores */
+  }
+}
+/* Fim section 5 */
+
+/* Inicio section 6 */
+.atendimento-section {
+  /*background-color: var(--cor-secundaria); /* Cor de fundo */
+  background-color: rgba(27, 86, 253, 0.7); /* Cor de fundo com opacidade 7% */
+  padding: 80px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto central */
+  font-family: var(--fonte-principal); /* Fonte principal */
+  position: relative; /* Para posicionamento absoluto de elementos filhos, como o vídeo */
+  overflow: hidden; /* Garante que elementos posicionados absolutamente não vazem */
+}
+
+.atendimento-content {
+  max-width: 1200px; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  display: flex; /* Layout flex para os itens de atendimento */
+  flex-wrap: wrap; /* Permite que os itens quebrem em telas menores */
+  justify-content: space-around; /* Espaço igual entre os itens */
+  position: relative; /* Para garantir que o conteúdo fique na frente do vídeo (se houver) */
+}
+
+.atendimento-content h2 {
+  font-size: 2.5rem; /* Tamanho da fonte do título */
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 60px; /* Espaçamento inferior do título */
+  color: #ffffff; /* Cor do texto branco */
+  width: 100%; /* O título ocupa a largura total */
+}
+
+.atendimento-item {
+  display: flex; /* Layout flex para alinhar ícone, título e texto */
+  flex-direction: column; /* Itens dispostos em coluna */
+  align-items: center; /* Alinhamento horizontal dos itens ao centro */
+  width: 23%; /* Largura de cada item */
+  margin: 20px 1%; /* Espaçamento externo dos itens */
+  text-align: center; /* Alinhamento do texto dentro do item */
+  color: #ffffff; /* Cor do texto branco */
+}
+
+.atendimento-item i {
+  font-size: 3rem; /* Tamanho dos ícones */
+  margin-bottom: 20px; /* Espaçamento inferior dos ícones */
+  transition: transform 0.3s ease-in-out; /* Transição suave para a rotação */
+}
+
+.atendimento-item i:hover {
+  transform: rotate(360deg); /* Rotação ao passar o mouse */
+}
+
+.atendimento-item h3 {
+  font-size: 1.5rem; /* Tamanho da fonte do subtítulo */
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 15px; /* Espaçamento inferior do subtítulo */
+}
+
+.atendimento-item p {
+  font-size: 1rem; /* Tamanho da fonte do parágrafo */
+  line-height: 1.6; /* Altura da linha do parágrafo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .atendimento-item {
+    width: 90%; /* Largura dos itens em telas menores */
+    margin: 30px 0; /* Espaçamento dos itens em telas menores */
+  }
+}
+
+/* Estilos para o vídeo de fundo (se você for usar) */
+.atendimento-video-bg {
+  position: absolute; /* Posiciona o elemento absolutamente dentro de seu container pai (atendimento-section) */
+  top: 0; /* Alinha o topo do vídeo com o topo do container pai */
+  left: 0; /* Alinha a esquerda do vídeo com a esquerda do container pai */
+  width: 100%; /* Define a largura do vídeo para ocupar 100% da largura do container pai */
+  height: 100%; /* Define a altura do vídeo para ocupar 100% da altura do container pai */
+  object-fit: cover; /* Garante que o vídeo cubra toda a área do container, mantendo a proporção */
+  z-index: -1; /* Coloca o vídeo atrás de outros elementos dentro da seção */
+}
+/* Fim section 6 */
+
+/* Inicio section 7 */
+.porque-escolher-section {
+  background-color: #f0f0f0; /* Define a cor de fundo como #f0f0f0 (Cor de fundo similar à imagem) */
+  padding: 60px 20px; /* Define um preenchimento superior e inferior de 60px e um preenchimento esquerdo e direito de 20px */
+  text-align: center; /* Centraliza o texto dentro da seção */
+  font-family: var(--fonte-principal); /* Define a fonte para sans-serif */
+}
+
+.porque-escolher-content {
+  max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.porque-escolher-content h2 {
+  font-size: 2.2rem; /* Define o tamanho da fonte do título como 2.2rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  margin-bottom: 40px; /* Adiciona uma margem inferior de 40px */
+  color: #333; /* Define a cor do título */
+}
+
+.porque-escolher-item {
+  background-color: #e0e0e0; /* Define a cor de fundo dos itens como #e0e0e0 */
+  padding: 20px; /* Define um preenchimento de 20px em todos os lados */
+  border-radius: 5px; /* Adiciona bordas arredondadas com um raio de 5px */
+  text-align: left; /* Alinha o texto à esquerda dentro do item */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20px */
+}
+
+.porque-escolher-item h3 {
+  font-size: 1.3rem; /* Define o tamanho da fonte do título do item como 1.3rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  color: #333; /* Define a cor do título do item */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+}
+
+.porque-escolher-item p {
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo como 1rem */
+  color: #555; /* Define a cor do texto do item */
+  line-height: 1.5; /* Define a altura da linha como 1.5 vezes o tamanho da fonte */
+}
+
+/* Layout para telas maiores (disposição em duas colunas) */
+@media (min-width: 769px) {
+  .porque-escolher-content {
+    display: grid; /* Usa o modelo de layout grid para organizar os elementos filhos */
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas de igual largura */
+    gap: 20px; /* Define um espaçamento de 20px entre as colunas e linhas do grid */
+  }
+
+  .porque-escolher-content h2 {
+    grid-column: 1 / -1; /* Faz com que o título ocupe todas as colunas */
+  }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .porque-escolher-item {
+    width: 100%; /* Os itens ocupam toda a largura em telas menores */
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15px */
+  }
+}
+/* Fim section 7 */
+
+/* Inicio footer */
+
+.main-footer {
+  background-color: var(--cor-secundaria); /* Define a cor de fundo usando a variável CSS --cor-secundaria (Cor de fundo escura) */
+  color: #FFFFFF; /* Define a cor do texto como branco */
+  font-family: var(--fonte-principal); /* Define a fonte para sans-serif */
+  padding: 40px 20px; /* Define um preenchimento superior e inferior de 40px e um preenchimento esquerdo e direito de 20px */
+}
+
+.footer-top {
+  display: flex; /* Usa o modelo de layout flexbox para organizar os elementos filhos */
+  justify-content: space-between; /* Distribui o espaço entre os elementos filhos, empurrando-os para as extremidades */
+  align-items: center; /* Alinha os elementos filhos verticalmente ao centro */
+  padding-bottom: 30px; /* Adiciona um preenchimento inferior de 30px */
+  border-bottom: 1px solid #333; /* Adiciona uma borda inferior de 1px de espessura, sólida e com a cor #333 */
+  margin-bottom: 30px; /* Adiciona uma margem inferior de 30px */
+}
+
+.footer-logo img {
+  max-width: 150px; /* Define uma largura máxima para a imagem do logo (Ajuste o tamanho do logo conforme necessário) */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+}
+
+.footer-logo p {
+  font-size: 0.9rem; /* Define o tamanho da fonte do parágrafo como 0.9rem */
+  color: #ccc; /* Define a cor do texto como #ccc */
+}
+
+.footer-social a {
+  display: inline-block; /* Permite que os links fiquem na mesma linha e tenham propriedades de bloco */
+  margin-left: 15px; /* Adiciona uma margem esquerda de 15px entre os links */
+  font-family: var(--fonte-principal);}
+
+/* Nova classe para os ícones sociais */
+.footer-social a i {
+  font-size: 2.5em; /* Aumenta o tamanho dos ícones (ajuste conforme necessário) */
+  color: #FFFFFF; /* Define a cor dos ícones como branco */
+  opacity: 0.7; /* Mantém a opacidade inicial */
+  transition: opacity 0.3s ease; /* Mantém a transição de opacidade */
+}
+
+.footer-social a:hover i {
+  opacity: 1; /* Mantém a opacidade ao passar o mouse */
+}
+
+.footer-middle {
+  display: flex; /* Usa o modelo de layout flexbox para organizar os elementos filhos */
+  flex-direction: column; /* Alinha os elementos filhos em uma coluna */
+  gap: 30px; /* Define um espaçamento de 30px entre os elementos filhos */
+  padding-bottom: 40px; /* Adiciona um preenchimento inferior de 40px */
+  border-bottom: 1px solid #333; /* Adiciona uma borda inferior de 1px de espessura, sólida e com a cor #333 */
+  margin-bottom: 30px; /* Adiciona uma margem inferior de 30px */
+}
+
+.footer-newsletter h3 {
+  font-size: 1.2rem; /* Define o tamanho da fonte do título como 1.2rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  margin-bottom: 15px; /* Adiciona uma margem inferior de 15px */
+}
+
+.footer-newsletter form {
+  display: flex; /* Usa o modelo de layout flexbox para organizar os elementos filhos */
+  max-width: 400px; /* Define uma largura máxima para o formulário */
+}
+
+.footer-newsletter input[type="email"] {
+  flex-grow: 1; /* Permite que o input cresça para ocupar o espaço disponível */
+  padding: 10px; /* Define um preenchimento de 10px em todos os lados */
+  border: 1px solid #555; /* Adiciona uma borda de 1px de espessura, sólida e com a cor #555 */
+  border-radius: 5px 0 0 5px; /* Adiciona bordas arredondadas apenas nos cantos esquerdos */
+  color: #333; /* Define a cor do texto como #333 */
+}
+
+.footer-newsletter button {
+  background-color: #0118D8; /* Define a cor de fundo usando a cor primária */
+  color: #FFFFFF; /* Define a cor do texto como branco */
+  border: none; /* Remove a borda padrão do botão */
+  padding: 10px 15px; /* Define um preenchimento superior e inferior de 10px e um preenchimento esquerdo e direito de 15px */
+  border-radius: 0 5px 5px 0; /* Adiciona bordas arredondadas apenas nos cantos direitos */
+  cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos para a propriedade background-color */
+}
+
+.footer-newsletter button:hover {
+  background-color: #1B56FD; /* Define a cor de fundo ao passar o mouse usando a cor secundária */
+}
+
+.footer-nav {
+  display: grid; /* Usa o modelo de layout grid para organizar os elementos filhos */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cria colunas que se ajustam automaticamente com uma largura mínima de 150px */
+  gap: 20px; /* Define um espaçamento de 20px entre as colunas e linhas do grid */
+  font-family: var(--fonte-principal);}
+
+.footer-nav h4 {
+  font-size: 1rem; /* Define o tamanho da fonte do título como 1rem */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+}
+
+.footer-nav ul {
+  list-style: none; /* Remove os marcadores de lista padrão */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  font-family: var(--fonte-principal);}
+
+.footer-nav li {
+  margin-bottom: 8px; /* Adiciona uma margem inferior de 8px aos itens da lista */
+  font-family: var(--fonte-principal);}
+
+.footer-nav a {
+  color: #FFFFFF; /* Define a cor do texto como branco */
+  text-decoration: none; /* Remove a decoração de texto padrão dos links */
+  font-size: 0.9rem; /* Define o tamanho da fonte como 0.9rem */
+  opacity: 0.7; /* Define a opacidade inicial como 0.7 */
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos para a propriedade opacity */
+  font-family: var(--fonte-principal);}
+
+.footer-nav a:hover {
+  opacity: 1; /* Define a opacidade para 1 ao passar o mouse */
+}
+
+.footer-bottom {
+  text-align: center; /* Centraliza o texto */
+  font-size: 0.8rem; /* Define o tamanho da fonte como 0.8rem */
+  color: #ffffff; /* Define a cor do texto como #ccc */
+  line-height: 1.5; /* Define a altura da linha como 1.5 vezes o tamanho da fonte */
+  display: flex; /* Adiciona para usar Flexbox */
+  flex-direction: column; /* Alinha os itens verticalmente no centro */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilos específicos para o logo da Vtechnologie no footer */
+.footer-bottom p:last-child {
+  margin-top: 10px; /* Adiciona um espaçamento de 10 pixels acima do "Desenvolvido por" */
+  display: flex; /* Adiciona Flexbox para alinhar texto e logo na mesma linha */
+  align-items: center; /* Alinha verticalmente o texto e o logo */
+  justify-content: center; /* Centraliza o texto e o logo horizontalmente */
+}
+
+.footer-bottom p:last-child a img.vtechnologie-logo {
+  width: 40px;
+  height: auto;
+  vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
+  margin-left: 5px; /* Adiciona um pequeno espaço entre o texto e o logo (opcional) */
+  margin-top: 0; /* Remove a margem superior que estava aqui */
+}
+/* Final footer */
+
+/* Inicio botão do WhatsApp */
+.whatsapp-button {
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 20px; /* Distância da parte inferior da tela */
+  right: 20px; /* Distância da parte direita da tela */
+  background-color: #25D366; /* Cor de fundo verde do WhatsApp */
+  color: #FFFFFF; /* Cor do ícone branco */
+  border-radius: 50%; /* Deixa o botão redondo */
+  width: 60px; /* Largura do botão */
+  height: 60px; /* Altura do botão */
+  text-align: center; /* Centraliza o ícone */
+  line-height: 60px; /* Centraliza o ícone verticalmente */
+  font-size: 2.5rem; /* Tamanho do ícone */
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+  transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Cor de fundo mais escura no hover */
+}
+/* Final botão do WhatsApp */
+
+/* Inicio botão de voltar ao topo */
+.back-to-top-button {
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 20px; /* Distância da parte inferior da tela */
+  right: 80px; /* Distância da parte direita da tela (ajuste conforme a posição do botão de WhatsApp) */
+  background-color: #0118D8; /* Cor de fundo azul */
+  color: #FFFFFF; /* Cor do ícone branco */
+  border-radius: 50%; /* Deixa o botão redondo */
+  width: 40px; /* Largura do botão */
+  height: 40px; /* Altura do botão */
+  text-align: center; /* Centraliza o ícone */
+  line-height: 40px; /* Centraliza o ícone verticalmente */
+  font-size: 1.5rem; /* Tamanho do ícone */
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+  cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
+  transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+.back-to-top-button:hover {
+  background-color: #1B56FD; /* Cor de fundo mais clara no hover (opcional) */
+}
+
+/* Opcional: Esconder o botão inicialmente e mostrar ao rolar */
+.back-to-top-button {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s; /* Adiciona um pequeno delay para o visibility */
+}
+
+body.scrolled .back-to-top-button {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0s; /* Remove o delay para o visibility */
+}
+/* Fim botão de voltar ao topo */
+
+/* Estilos para a seção de contato */
+
+/* Define variáveis de cores e fontes para padronização */
+:root {
+  --fonte-principal: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Define a fonte principal a ser utilizada */
+  --cor-texto-principal: #333;
+  --cor-texto-secundario: #555;
+  --cor-texto-terciario: #777;
+  --cor-fundo-secao: #f9f9f9;
+  --cor-fundo-formulario: #fff;
+  --cor-borda: #ccc;
+  --cor-primaria: #007bff;
+  --cor-primaria-hover: #0056b3;
+  --cor-borda-arredondada: 8px;
+  --espacamento-interno-secao: 40px 0;
+  --espacamento-interno-container: 0 20px;
+  --espacamento-inferior-titulo: 30px;
+  --espacamento-entre-form-info: 30px;
+  --espacamento-interno-formulario: 30px;
+  --espacamento-inferior-grupo-campo: 20px;
+  --espacamento-inferior-label: 5px;
+  --tamanho-fonte-principal: 16px;
+  --tamanho-fonte-titulo: 36px;
+  --tamanho-fonte-subtitulo: 18px;
+  --transicao-padrao: background-color 0.3s ease;
+  --sombra-padrao: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contato-section {
+  padding: var(--espacamento-interno-secao); /* Espaçamento interno vertical da seção */
+  background-color: var(--cor-fundo-secao); /* Cor de fundo da seção */
+  font-family: var(--fonte-principal); /* Aplica a fonte principal */
+}
+
+/* Estilos para o container principal da seção */
+.contato-section .container {
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container na tela */
+  padding: var(--espacamento-interno-container); /* Espaçamento interno horizontal do container */
+}
+
+/* Estilos para o título da seção */
+.contato-section h2 {
+  text-align: center; /* Centraliza o texto do título */
+  margin-bottom: var(--espacamento-inferior-titulo); /* Espaçamento inferior do título */
+  color: var(--cor-texto-principal); /* Cor do texto do título */
+  font-size: var(--tamanho-fonte-titulo);
+}
+
+/* Estilos para o wrapper que contém o formulário e as informações */
+.contato-wrapper {
+  display: flex; /* Utiliza flexbox para organizar os elementos lado a lado */
+  gap: var(--espacamento-entre-form-info); /* Espaçamento entre o formulário e as informações */
+  margin-bottom: var(--espacamento-inferior-titulo); /* Espaçamento inferior do wrapper */
+}
+
+/* Estilos para a área do formulário de contato */
+.contato-form {
+  flex: 1; /* Ocupa o espaço restante disponível */
+  background-color: var(--cor-fundo-formulario); /* Cor de fundo do formulário */
+  padding: var(--espacamento-interno-formulario); /* Espaçamento interno do formulário */
+  border-radius: var(--cor-borda-arredondada); /* Borda arredondada do formulário */
+  box-shadow: var(--sombra-padrao); /* Sombra suave no formulário */
+}
+
+/* Estilos para o título dentro do formulário */
+.contato-form h3 {
+  margin-top: 0; /* Remove a margem superior padrão */
+  margin-bottom: calc(var(--espacamento-inferior-grupo-campo) / 2); /* Espaçamento inferior do título do formulário */
+  color: var(--cor-texto-principal); /* Cor do texto do título do formulário */
+  font-size: var(--tamanho-fonte-subtitulo);
+}
+
+/* Estilos para cada grupo de campo do formulário */
+.form-group {
+  margin-bottom: var(--espacamento-inferior-grupo-campo); /* Espaçamento inferior entre os grupos de campos */
+}
+
+/* Estilos para as labels dos campos do formulário */
+.form-group label {
+  display: block; /* Faz a label ocupar a largura total */
+  margin-bottom: var(--espacamento-inferior-label); /* Espaçamento inferior da label */
+  font-weight: bold; /* Texto da label em negrito */
+  color: var(--cor-texto-secundario); /* Cor do texto da label */
+  font-size: var(--tamanho-fonte-principal);
+}
+
+/* Estilos para os campos de texto, e-mail e telefone do formulário */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  width: 100%; /* Ocupa a largura total do container pai */
+  padding: 10px; /* Espaçamento interno dos campos */
+  border: 1px solid var(--cor-borda); /* Borda dos campos */
+  border-radius: 4px; /* Borda arredondada dos campos */
+  box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+  font-size: var(--tamanho-fonte-principal); /* Tamanho da fonte dentro dos campos */
+}
+
+/* Estilos para o placeholder do captcha */
+.form-group .g-recaptcha { /* Aplica estilo diretamente ao elemento do reCAPTCHA */
+  margin-top: 10px; /* Espaçamento superior do captcha */
+}
+
+/* Estilos para o botão de iniciar o chat */
+.contato-form button#iniciar-chat {
+  background-color: var(--cor-primaria); /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  padding: 12px 20px; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 4px; /* Borda arredondada do botão */
+  cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+  font-size: var(--tamanho-fonte-subtitulo); /* Tamanho da fonte do texto do botão */
+  transition: var(--transicao-padrao); /* Adiciona uma transição suave na cor de fundo */
+  width: 100%; /* O botão ocupa a largura total em telas menores */
+}
+
+/* Estilos para o estado hover do botão de iniciar o chat */
+.contato-form button#iniciar-chat:hover {
+  background-color: var(--cor-primaria-hover); /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilos para a área de informações de contato */
+.contato-info {
+  flex: 1; /* Ocupa o espaço restante disponível */
+  background-color: var(--cor-fundo-formulario); /* Cor de fundo da área de informações */
+  padding: var(--espacamento-interno-formulario); /* Espaçamento interno da área de informações */
+  border-radius: var(--cor-borda-arredondada); /* Borda arredondada da área de informações */
+  box-shadow: var(--sombra-padrao); /* Sombra suave na área de informações */
+}
+
+/* Estilos para o título dentro da área de informações */
+.contato-info h3 {
+  margin-top: 0; /* Remove a margem superior padrão */
+  margin-bottom: calc(var(--espacamento-inferior-grupo-campo) / 2); /* Espaçamento inferior do título da área de informações */
+  color: var(--cor-texto-principal); /* Cor do texto do título da área de informações */
+  font-size: var(--tamanho-fonte-subtitulo);
+}
+
+/* Estilos para cada item de informação */
+.info-item {
+  margin-bottom: 15px; /* Espaçamento inferior entre os itens de informação */
+}
+
+/* Estilos para o título de cada item de informação (SAC, Ouvidoria, etc.) */
+.info-item h4 {
+  margin-top: 0; /* Remove a margem superior padrão */
+  margin-bottom: var(--espacamento-inferior-label); /* Espaçamento inferior do título do item */
+  color: var(--cor-texto-secundario); /* Cor do texto do título do item */
+  font-size: var(--tamanho-fonte-principal);
+  font-weight: bold;
+}
+
+/* Estilos para o parágrafo de conteúdo de cada item de informação */
+.info-item p {
+  color: var(--cor-texto-terciario); /* Cor do texto do parágrafo do item */
+  margin-bottom: 0; /* Remove a margem inferior padrão */
+  font-size: var(--tamanho-fonte-principal);
+}
+
+/* Estilos para a área do mapa do Google */
+.mapa-google {
+  margin-top: var(--espacamento-inferior-titulo); /* Espaçamento superior da área do mapa */
+  border-radius: var(--cor-borda-arredondada); /* Borda arredondada da área do mapa */
+  overflow: hidden; /* Garante que o iframe não ultrapasse o border-radius */
+  box-shadow: var(--sombra-padrao); /* Sombra suave na área do mapa */
+}
+
+/* Estilos para o título da área do mapa */
+.mapa-google h3 {
+  text-align: center; /* Centraliza o texto do título do mapa */
+  margin-bottom: calc(var(--espacamento-inferior-grupo-campo) / 2); /* Espaçamento inferior do título do mapa */
+  color: var(--cor-texto-principal); /* Cor do texto do título do mapa */
+  font-size: var(--tamanho-fonte-subtitulo);
+
+}
+
+/* Media queries para tornar a seção responsiva */
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  .contato-wrapper {
+    flex-direction: column; /* Form e informações ficam em coluna */
+    gap: 20px; /* Reduz o espaçamento entre eles */
+  }
+
+  .contato-form,
+  .contato-info {
+    flex: 1; /* Ocupam a largura total disponível */
+    padding: 20px; /* Reduz o padding interno */
+  }
+
+  .contato-section h2 {
+    font-size: 28px; /* Reduz o tamanho do título */
+    margin-bottom: 20px;
+  }
+
+  .contato-form h3,
+  .contato-info h3 {
+    font-size: 20px; /* Reduz o tamanho dos subtítulos */
+    margin-bottom: 15px;
+  }
+
+  .mapa-google h3 {
+    font-size: 20px;
+  }
+
+  .mapa-google iframe {
+    height: 300px; /* Reduz a altura do mapa */
+  }
+}
+
+/* Para telas menores que 576px (celulares menores) */
+@media (max-width: 576px) {
+  .contato-section .container {
+    padding: 0 15px; /* Reduz ainda mais o padding horizontal */
+  }
+
+  .form-group label {
+    font-size: 14px; /* Reduz o tamanho da fonte das labels */
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"] {
+    font-size: 14px; /* Reduz o tamanho da fonte dos inputs */
+    padding: 8px;
+  }
+
+  .contato-form button#iniciar-chat {
+    font-size: 16px; /* Reduz o tamanho da fonte do botão */
+    padding: 10px 15px;
+  }
+
+  .info-item h4 {
+    font-size: 16px; /* Reduz o tamanho da fonte dos títulos dos itens de informação */
+  }
+
+  .info-item p {
+    font-size: 14px; /* Reduz o tamanho da fonte dos parágrafos dos itens de informação */
+  }
+}
+
+/* Inicio para a seção de produtos */
+.produtos-section {
+  padding: 60px 0; /* Espaçamento interno vertical da seção */
+  background-color: #fff; /* Cor de fundo da seção */
+  font-family: var(--fonte-principal); /* Aplica a fonte principal */
+}
+
+.produtos-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.produtos-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--cor-texto-principal); /* Usando variável de cor */
+  font-size: var(--tamanho-fonte-titulo); /* Usando variável de fonte */
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas responsivas com largura mínima de 300px */
+  gap: 30px; /* Espaçamento entre os cards de produtos */
+}
+
+.produto-card {
+  background-color: var(--cor-fundo-formulario); /* Usando variável de cor */
+  border-radius: var(--cor-borda-arredondada); /* Usando variável de borda arredondada */
+  box-shadow: var(--sombra-padrao); /* Usando variável de sombra */
+  padding: 20px;
+  text-align: center;
+}
+
+.produto-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.produto-card h3 {
+  color: var(--cor-texto-principal); /* Usando variável de cor */
+  font-size: var(--tamanho-fonte-subtitulo); /* Usando variável de fonte */
+  margin-bottom: 10px;
+}
+
+.produto-card p {
+  color: var(--cor-texto-terciario); /* Usando variável de cor */
+  font-size: var(--tamanho-fonte-principal); /* Usando variável de fonte */
+  margin-bottom: 15px;
+}
+
+.produto-card .btn-ver-mais {
+  display: inline-block;
+  background-color: var(--cor-primaria); /* Usando variável de cor */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: var(--transicao-padrao); /* Usando variável de transição */
+}
+
+.produto-card .btn-ver-mais:hover {
+  background-color: var(--cor-primaria-hover); /* Usando variável de cor */
+}
+
+/* Media query para telas menores (tablets) */
+@media (max-width: 992px) {
+  .produtos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajusta largura mínima para tablets */
+  }
+}
+
+/* Media query para telas menores (celulares) */
+@media (max-width: 576px) {
+  .produtos-grid {
+    grid-template-columns: 1fr; /* Exibe um produto por linha em celulares */
+  }
+}
+/* Fim da seção de produtos */
+
+/* Inicio da seção de catálogo 2 */
+.catalogo2-section {
+  padding: 60px 0; /* Espaçamento interno vertical da seção */
+  background-color: var(--cor-fundo-secao); /* Usando variável de cor */
+  font-family: var(--fonte-principal); /* Aplica a fonte principal */
+}
+
+.catalogo2-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.catalogo2-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--cor-texto-principal); /* Usando variável de cor */
+  font-size: var(--tamanho-fonte-titulo); /* Usando variável de fonte */
+}
+
+.catalogo2-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.catalogo2-item {
+  background-color: var(--cor-fundo-formulario); /* Usando variável de cor */
+  border-radius: var(--cor-borda-arredondada); /* Usando variável de borda arredondada */
+  box-shadow: var(--sombra-padrao); /* Usando variável de sombra */
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.catalogo2-item h3 {
+  color: var(--cor-texto-principal); /* Usando variável de cor */
+  font-size: var(--tamanho-fonte-subtitulo); /* Usando variável de fonte */
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.catalogo2-item p {
+  color: var(--cor-texto-terciario); /* Usando variável de cor */
+  font-size: var(--tamanho-fonte-principal); /* Usando variável de fonte */
+  margin-bottom: 20px;
+}
+
+.catalogo2-item .btn-abrir-catalogo2 {
+  display: inline-block;
+  background-color: var(--cor-primaria); /* Usando variável de cor */
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: var(--transicao-padrao); /* Usando variável de transição */
+}
+
+.catalogo2-item .btn-abrir-catalogo2:hover {
+  background-color: var(--cor-primaria-hover); /* Usando variável de cor */
+}
+
+/* Media query para telas menores (celulares) */
+@media (max-width: 576px) {
+  .catalogo2-item {
+    padding: 20px;
+  }
+
+  .catalogo2-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+
+  .catalogo2-item p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+  }
+
+  .catalogo2-item .btn-abrir-catalogo2 {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
+/* Fim da seção de catálogo 2 */
+
