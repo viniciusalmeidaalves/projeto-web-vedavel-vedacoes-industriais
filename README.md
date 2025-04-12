@@ -1,6 +1,6 @@
 # Desenvolvimento Web - Página institucional para empresa: Vedavel, vedações indútriais 
 
-Desenvolvimento da página: Vedavel
+Desenvolvimento da página Vedavel
 
 Tecnologias HTML, CSS e JS
 
