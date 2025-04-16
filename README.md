@@ -20,6 +20,9 @@ Tecnologias HTML5, CSS3 e JavaScript
 ![image](https://github.com/user-attachments/assets/10c135ad-ddf3-4167-aa69-7d39ce11894d)
 *Página contato
 
+![image](https://github.com/user-attachments/assets/252adf02-c305-4973-8bdc-2ed1798aa6db)
+*Footer
+
 ## 🛠 Tecnologias utilizadas
 
 - HTML5
