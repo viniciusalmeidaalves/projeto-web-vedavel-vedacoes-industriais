@@ -6,18 +6,18 @@ Tecnologias HTML, CSS e JS
 
 ## 🖼 Prévia do Projeto 
 
-![image](https://github.com/user-attachments/assets/e97d44cb-7e13-41ca-9d71-89d2745a5959)
+![image](https://github.com/user-attachments/assets/ee5392b2-4dd6-409b-82a4-fe3a80cc579a)
 *Página inicial do projeto Vedavel
 #
-![image](https://github.com/user-attachments/assets/74221473-76f2-4575-b46d-886f00ff7b88)
-![image](https://github.com/user-attachments/assets/b4d47e31-63c8-41b6-88fc-16725d921b24)
+![image](https://github.com/user-attachments/assets/3083870d-b4a3-433c-b62a-09858a9cb0a4)
+![image](https://github.com/user-attachments/assets/a3f901d7-b4af-4765-8dd0-d4d351784f44)
 *Página produtos
 #
-![image](https://github.com/user-attachments/assets/f44ee351-6295-4535-83b6-bf049d2a4ef2)
+![image](https://github.com/user-attachments/assets/e50efa4b-48e6-4ac3-87aa-05fc91d8e5df)
 *Página catalogos
 #
-![image](https://github.com/user-attachments/assets/a2eed646-4016-4dc8-bdb4-62e998e49ad0)
-![image](https://github.com/user-attachments/assets/125f7201-7934-4e8d-a874-c18cbdcf266f)
+![image](https://github.com/user-attachments/assets/394e4370-df40-4844-9650-159c3e93396b)
+![image](https://github.com/user-attachments/assets/10c135ad-ddf3-4167-aa69-7d39ce11894d)
 *Página contato
 
 ## 🛠 Tecnologias utilizadas
