@@ -2,7 +2,7 @@
 
 Desenvolvimento da página Vedavel
 
-Tecnologias HTML, CSS e JS
+Tecnologias HTML5, CSS3 e JavaScript
 
 ## 🖼 Prévia do Projeto 
 
