@@ -37,5 +37,4 @@ Tecnologias HTML5, CSS3, JavaScript, PHP e MySQL
 
 ## 📁 Acesso ao projeto
 
-1. [acessar o código fonte do projeto](https://github.com/viniciusalmeidaalves/projeto-web-vedavel-vedacoes-industriais)
-2. [visualizar o projeto na web](https://projeto-web-vedavel-vedacoes-industriais-u2bo.vercel.app/)
+1. [visualizar o projeto na web](https://www.vedavel.com.br/))
