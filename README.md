@@ -2,7 +2,7 @@
 
 Desenvolvimento da página Vedavel
 
-Tecnologias HTML5, CSS3 e JavaScript
+Tecnologias HTML5, CSS3, JavaScript, PHP e MySQL
 
 ## 🖼 Prévia do Projeto 
 <img width="1280" height="985" alt="image" src="https://github.com/user-attachments/assets/6ac667e6-1d93-4c34-861b-b3243361259b" />
@@ -25,6 +25,8 @@ Tecnologias HTML5, CSS3 e JavaScript
 - HTML5
 - CSS3
 - JavaScript
+- PHP
+- MySQL
 
 ## 📁 Acesso ao projeto
 
