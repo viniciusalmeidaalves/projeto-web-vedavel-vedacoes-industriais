@@ -37,4 +37,4 @@ Tecnologias HTML5, CSS3, JavaScript, PHP e MySQL
 
 ## 📁 Acesso ao projeto
 
-1. [visualizar o projeto na web](https://www.vedavel.com.br/))
+1. [visualizar o projeto na web](https://www.vedavel.com.br/)
