@@ -1,0 +1,12 @@
+# .gitignore for a web project
+admin/
+css/
+includes/
+js/
+midias/
+php/
+uploads/
+
+db_produtos.txt
+gerar_hash.php
+
