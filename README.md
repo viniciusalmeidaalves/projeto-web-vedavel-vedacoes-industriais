@@ -1,6 +1,6 @@
 # Desenvolvimento Web - Página institucional para empresa: Vedavel - Vedações Indústriais
 
-Desenvolvimento da página Vedavel
+Desenvolvimento da página Vedavel, Vedações Indústriais
 
 Tecnologias HTML5, CSS3, JavaScript, PHP e MySQL
 
