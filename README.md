@@ -5,8 +5,20 @@ Desenvolvimento da página Vedavel
 Tecnologias HTML5, CSS3 e JavaScript
 
 ## 🖼 Prévia do Projeto 
-![image](https://github.com/user-attachments/assets/a723d932-0e6e-4c40-9b05-be5873b38ddd)
+<img width="1280" height="985" alt="image" src="https://github.com/user-attachments/assets/6ac667e6-1d93-4c34-861b-b3243361259b" />
 *Página inicial do projeto Vedavel
+
+<img width="1280" height="984" alt="image" src="https://github.com/user-attachments/assets/2130efc1-9709-45fc-8294-f410d513b664" />
+*Página dos produtos
+
+<img width="1280" height="984" alt="image" src="https://github.com/user-attachments/assets/d7774f95-5f36-4a15-b99e-522997d11c36" />
+*Página dos catálogos
+
+<img width="1280" height="983" alt="image" src="https://github.com/user-attachments/assets/918b6cf5-3a80-4b24-85a5-fa865fcba815" />
+*Página dos contatos
+
+<img width="1280" height="984" alt="image" src="https://github.com/user-attachments/assets/a2496adb-25f0-40a2-89e9-d415dcf8fb59" />
+*Portal administrativos
 
 ## 🛠 Tecnologias utilizadas
 
