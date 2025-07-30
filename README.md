@@ -27,6 +27,9 @@ Tecnologias HTML5, CSS3, JavaScript, PHP e MySQL
 <img width="1280" height="984" alt="image" src="https://github.com/user-attachments/assets/733a25c6-79a4-42a2-b22b-9d85963faf8e" />
 *Painel Admin
 
+<img width="1280" height="985" alt="image" src="https://github.com/user-attachments/assets/7be6d32b-bb55-4133-acd7-d5a36aa2f0d4" />
+*Diagrama do banco de dados MySQL Workbench
+
 ## 🛠 Tecnologias utilizadas
 
 - HTML5
