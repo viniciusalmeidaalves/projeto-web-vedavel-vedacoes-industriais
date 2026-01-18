@@ -40,13 +40,13 @@ Fluxo de dados resumido
 
 ## 🖼 Prévia do Projeto 
 *Página inicial do projeto Vedavel
-<img width="1280" height="985" alt="image" src="https://github.com/user-attachments/assets/6ac667e6-1d93-4c34-861b-b3243361259b" />
+<img width="1365" height="727" alt="image" src="https://github.com/user-attachments/assets/5018f39e-6f24-45f9-99f9-6056b57dccc9" />
 
 *Portal administrativo
-<img width="1280" height="984" alt="image" src="https://github.com/user-attachments/assets/a2496adb-25f0-40a2-89e9-d415dcf8fb59" />
+<img width="1363" height="725" alt="image" src="https://github.com/user-attachments/assets/a19969e2-d72d-4ac4-af66-a67cf42e3ade" />
 
 *Painel Admin
-<img width="1280" height="984" alt="image" src="https://github.com/user-attachments/assets/733a25c6-79a4-42a2-b22b-9d85963faf8e" />
+<img width="1364" height="725" alt="image" src="https://github.com/user-attachments/assets/b91b48cb-3869-4d8b-8296-0d2a8e416778" />
 
 ## 📁 Acesso ao projeto
 
